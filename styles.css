@@ -1,4 +1,8 @@
 @font-face {
-    font-family: "CustomFont";
-    src: url(C:\Users\jack_\OneDrive\Documents\GitHub\jaqwebsite.github.io\assets\Poppins-Regular.ttf);
-    }
+    font-family: poppinsRegular;
+    src: url(Poppins-Regular.ttf);
+  }
+  
+  div {
+    font-family: poppinsRegular;
+  }
