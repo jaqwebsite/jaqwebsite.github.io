@@ -1,5 +1,16 @@
 p,
 h1 {
-    font-family: 'Courier New', Courier, monospace; 
-    font-weight: bold;
+  font-family: 'Courier New', Courier, monospace; 
+  font-weight: normal;
+  color: #cccccc;
+}
+
+body {
+  background-color: #202020;
+}
+
+hr {
+  background-color:#cccccc;
+  border-width:0;
+  height:1px;
 }
