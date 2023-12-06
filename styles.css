@@ -14,3 +14,11 @@ hr {
   border-width:0;
   height:1px;
 }
+
+a {
+  color: #cccccc;
+}
+
+a:hover {
+  text-decoration: none
+}
