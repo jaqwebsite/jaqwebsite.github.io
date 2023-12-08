@@ -1,6 +1,9 @@
 p,
 h1,
-a {
+a,
+summary,
+details,
+ul{
   font-family: 'Courier New', Courier, monospace; 
   font-weight: normal;
   color: #cccccc;
@@ -14,9 +17,24 @@ hr {
   background-color:#cccccc;
   border-width:0;
   height:1px;
-  padding:0px
+  padding:0px;
 }
 
 a:hover {
   text-decoration: none
+}
+
+summary {
+  border-style: solid;
+  border-left: 0px;
+  border-right: 0px;
+  padding-left: 4px;
+  border-width:1px;
+  padding: 3px;
+  margin-top: 3px;
+}
+
+ul {
+  list-style-type: "- ";
+  padding-left: 27px;
 }
