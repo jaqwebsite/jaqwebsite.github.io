@@ -35,6 +35,11 @@ summary {
   margin-bottom: 4px;
 }
 
+p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 ul {
   list-style-type: "- ";
   padding-left: 27px;
