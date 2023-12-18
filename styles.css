@@ -5,8 +5,8 @@ summary,
 details,
 ul,
 footer {
-  font-family: 'Courier New', Courier, monospace; 
-  font-weight: normal;
+  font-family: 'Century Gothic', sans-serif; 
+  font-weight: bold;
   color: #cccccc;
 }
 
@@ -30,7 +30,7 @@ summary {
   border-left: 0px;
   border-right: 0px;
   padding-left: 4px;
-  border-width:1px;
+  border-width:2px;
   padding: 3px;
   margin-top: 10px;
   margin-bottom: 4px;
