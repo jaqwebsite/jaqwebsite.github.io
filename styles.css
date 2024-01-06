@@ -1,24 +1,14 @@
-p,
-h1,
-a,
-summary,
-details,
-ul,
-footer {
+html{
   font-family: 'Century Gothic', sans-serif; 
-  font-weight: bold;
-  color: #cccccc;
+  line-height: 1.3em;
+  color: #333;
+  letter-spacing: 0.02em;
+  font-size: 1.3em;
 }
 
-html {
-  background-color: #333333;
-}
-
-hr {
-  background-color:#cccccc;
-  border-width:0;
-  height:1px;
-  padding:0px;
+a {
+  color: #333;
+  text-decoration-thickness: 1px;
 }
 
 a:hover {
@@ -26,14 +16,7 @@ a:hover {
 }
 
 summary {
-  border-style: solid;
-  border-left: 0px;
-  border-right: 0px;
-  padding-left: 4px;
-  border-width:2px;
-  padding: 3px;
-  margin-top: 10px;
-  margin-bottom: 4px;
+  margin-top: 0.2em
 }
 
 p {
@@ -49,22 +32,35 @@ ul {
 
 details {
   cursor: pointer;
+  margin-left: 24px;
 }
 
-h1 {
-  font-size: 20px;
+details a {
+  margin-left: 24px
 }
 
-details details {
-  padding-left: 5px;
+body {
+  margin-left: 10px
 }
 
+nav,
 footer {
-  border-color: #cccccc;
-  border-style: solid;
-  border-width: 0px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-  padding: 5px;
-  margin-top: 50px
+  background-color: #e88e00ff; 
+  padding: 10px;
+  margin: -10px;
+  margin-bottom: 1px;
+  color:#fff
+}
+
+nav a,
+footer a {
+  color: #fff
+}
+
+details > summary {
+  list-style-type: '▸ ';
+}
+
+details[open] > summary {
+  list-style-type: '▾ ';
 }
