@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Monofonto; src: url('monofonto-regular.otf');
+    font-family: Milker; src: url('milker-regular.otf');
+}
+
+html{
+    font-family: 'Monofonto'; 
+}
