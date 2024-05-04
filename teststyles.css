@@ -31,23 +31,63 @@
     src: url('fonts/Sandre/sandre-regular.ttf');
 }
 
-#barcode {
-    font-family: 'Barcode', sans-serif;
-    font-size: 20pt
-}
-
 #breadcrumb {
+    display: inline-flex;
     font-size: 16pt;
     width: 378px;
+    vertical-align: bottom;
+}
+
+.barcode {
+    font-family: 'Barcode', sans-serif;
+    font-size: 41%;
+    white-space: nowrap;
+    overflow: hidden;
+    user-select: none;
+    margin-left: auto;
+}
+
+.flag {
     display: inline-flex;
-    align-items: flex-end;
+    height: 53px;
+    align-items: flex-start;
+    vertical-align: middle;
+}
+
+.bottom-bar {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    position: absolute;
+    width: 100vw;
+    position: fixed;
+    padding: 0.5vw;
+    bottom: 0;
+    left: 0
 }
 
 html {
-    font-family: 'Monofonto'; 
+    font-family: 'Monofonto';
+    font-size: 12;
+    padding: 2pt
 }
 
 nav {
+    display: flex;
+    position: sticky;
     font-family: 'Milker';
     font-size: 48pt;
+    align-items: center;
+    margin-top: -13px
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+article {
+    position:absolute;
+    overflow: scroll;
+    height: 38vw;
 }
