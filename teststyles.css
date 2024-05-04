@@ -68,17 +68,23 @@
 
 html {
     font-family: 'Monofonto';
-    font-size: 12;
+    font-size: 12pt;
     padding: 2pt
+}
+
+body {
+    margin-top: 0;
 }
 
 nav {
     display: flex;
-    position: sticky;
+    position: fixed;
+    width: 100%;
     font-family: 'Milker';
     font-size: 48pt;
     align-items: center;
-    margin-top: -13px
+    background-color: white;
+    top: 0;
 }
 
 a {
@@ -87,7 +93,5 @@ a {
 }
 
 article {
-    position:absolute;
-    overflow: scroll;
-    height: 38vw;
+    margin-top: 48px;
 }
