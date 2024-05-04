@@ -1,8 +1,28 @@
 @font-face {
-    font-family: Monofonto; src: url('monofonto-regular.woff2');
-    font-family: Milker; src: url('milker-regular.otf');
+    font-family: 'Air Conditioner';
+    src: url('fonts/Air\ Conditioner/air-conditioner-regular.ttf');
+
+    font-family: 'Barcode';
+    src: url('fonts/Barcode\ 39/ConnectCode39.ttf');
+
+    font-family: 'Milker';
+    src: url('fonts/Milker/milker-regular.ttf');
+
+    font-family: 'Monofonto';
+    src: url('fonts/Monofonto/monofonto-regular.ttf');
+
+    font-family: 'Retro';
+    src:url('fonts/Retro/retro-regular.ttf');
+
+    font-family: 'Sandre';
+    src: url('fonts/Sandre/sandre-regular.ttf');
 }
 
-html{
+html {
     font-family: 'Monofonto'; 
+}
+
+nav {
+    font-family: 'Milker';
+    font-size: 96pt;
 }
