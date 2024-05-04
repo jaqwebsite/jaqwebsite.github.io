@@ -1,21 +1,46 @@
 @font-face {
     font-family: 'Air Conditioner';
-    src: url('fonts/Air\ Conditioner/air-conditioner-regular.ttf');
+    src: url('fonts/AirConditioner/air-conditioner-regular.ttf');
+}
 
+@font-face {
     font-family: 'Barcode';
-    src: url('fonts/Barcode\ 39/ConnectCode39.ttf');
+    src: url('fonts/Barcode39/ConnectCode39.otf') format('opentype'),
+    url('fonts/Barcode39/ConnectCode39.woff') format('woff'),
+    url('fonts/Barcode39/ConnectCode39.woff2') format('woff2');
+    font-display: swap;
+}
 
+@font-face {
     font-family: 'Milker';
     src: url('fonts/Milker/milker-regular.ttf');
+}
 
+@font-face {
     font-family: 'Monofonto';
     src: url('fonts/Monofonto/monofonto-regular.ttf');
+}
 
+@font-face {
     font-family: 'Retro';
     src:url('fonts/Retro/retro-regular.ttf');
+}
 
+@font-face {
     font-family: 'Sandre';
     src: url('fonts/Sandre/sandre-regular.ttf');
+}
+
+#barcode {
+    font-family: 'Barcode', sans-serif;
+    font-size: 20pt
+}
+
+#breadcrumb {
+    font-size: 16pt;
+    width: 378px;
+    display: inline-flex;
+    align-items: flex-end;
 }
 
 html {
@@ -24,5 +49,5 @@ html {
 
 nav {
     font-family: 'Milker';
-    font-size: 96pt;
+    font-size: 48pt;
 }
