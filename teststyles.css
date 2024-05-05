@@ -1,3 +1,4 @@
+/***** FONT DECLARATION *****/
 @font-face {
     font-family: 'Air Conditioner';
     src: url('fonts/AirConditioner/air-conditioner-regular.ttf');
@@ -6,8 +7,8 @@
 @font-face {
     font-family: 'Barcode';
     src: url('fonts/Barcode39/ConnectCode39.otf') format('opentype'),
-    url('fonts/Barcode39/ConnectCode39.woff') format('woff'),
-    url('fonts/Barcode39/ConnectCode39.woff2') format('woff2');
+        url('fonts/Barcode39/ConnectCode39.woff') format('woff'),
+        url('fonts/Barcode39/ConnectCode39.woff2') format('woff2');
     font-display: swap;
 }
 
@@ -23,7 +24,7 @@
 
 @font-face {
     font-family: 'Retro';
-    src:url('fonts/Retro/retro-regular.ttf');
+    src: url('fonts/Retro/retro-regular.ttf');
 }
 
 @font-face {
@@ -31,8 +32,42 @@
     src: url('fonts/Sandre/sandre-regular.ttf');
 }
 
-#breadcrumb {
-    display: inline-flex;
+/***** SCROLLBAR CUSTOMISATION *****/
+html::-webkit-scrollbar {
+    width: 1.5vh;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: black;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: lightgrey;
+}
+
+/***** MEDIA QUERY *****/
+@media  (orientation: portrait) {
+    .hide-portrait {
+        display: none;
+    }
+
+    article {
+        columns: 1;
+    }
+}
+
+@media (orientation: landscape) {
+    .hide-landscape {
+      display: none;
+    }
+
+    article {
+        columns: 2;
+    }
+}
+
+/***** CLASS DEFINTION *****/
+.breadcrumb {
     font-size: 16pt;
     width: 378px;
     vertical-align: bottom;
@@ -48,40 +83,70 @@
 }
 
 .flag {
-    display: inline-flex;
-    height: 53px;
+    height: 46px;
     align-items: flex-start;
     vertical-align: middle;
+    margin-top: 1px;
 }
 
+/* The copyright message in the bottom bar */
+.copyright {
+    text-align: center;
+}
+
+/* This should be done with a justify-content as space-between but I don't know how to. Shame! */
 .bottom-bar {
+    display: flex;
     background-color: black;
     color: white;
-    display: inline-block;
-    position: absolute;
-    width: 100vw;
+    width: 99vw;
     position: fixed;
     padding: 0.5vw;
     bottom: 0;
-    left: 0
+    left: 0;
 }
 
+.bottom-bar span {
+    flex-grow: 1;
+}
+
+/***** MAIN DEFINITIONS *****/
 html {
-    font-family: 'Monofonto';
+    font-family: Monofonto;
     font-size: 12pt;
-    padding: 2pt
+    padding: 2pt;
 }
 
 body {
     margin-top: 0;
 }
 
+header {
+    display: inline-block;
+    position:relative;
+    font-family: Milker;
+    font-size: 60px;
+    margin-top: -15px;
+    left: 3px;
+    z-index: -1;
+}
+
+header.square {
+    display: inline-block;
+    position: absolute;
+    background-color: orange;
+    height: 50px;
+    width: calc(100% + 6px);
+    top: 31px;
+    left: -3px;
+}
+
 nav {
     display: flex;
     position: fixed;
-    width: 100%;
+    width: 99%;
     font-family: 'Milker';
-    font-size: 48pt;
+    font-size: 42pt;
     align-items: center;
     background-color: white;
     top: 0;
@@ -93,5 +158,6 @@ a {
 }
 
 article {
-    margin-top: 48px;
+    margin-top: 50pt;
+    margin-bottom: 30pt;
 }
