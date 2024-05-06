@@ -33,37 +33,20 @@
 }
 
 /***** SCROLLBAR CUSTOMISATION *****/
-html::-webkit-scrollbar {
+article::-webkit-scrollbar {
     width: 1.5vh;
+    background: #ffffff00;
+    position:absolute;
+    left: 0;
 }
 
-html::-webkit-scrollbar-thumb {
+article::-webkit-scrollbar-thumb {
     background-color: black;
 }
 
-html::-webkit-scrollbar-track {
-    background-color: lightgrey;
-}
-
-/***** MEDIA QUERY *****/
-@media  (orientation: portrait) {
-    .hide-portrait {
-        display: none;
-    }
-
-    article {
-        columns: 1;
-    }
-}
-
-@media (orientation: landscape) {
-    .hide-landscape {
-      display: none;
-    }
-
-    article {
-        columns: 2;
-    }
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    z-index: 1;
 }
 
 /***** CLASS DEFINTION *****/
@@ -86,7 +69,6 @@ html::-webkit-scrollbar-track {
     height: 46px;
     align-items: flex-start;
     vertical-align: middle;
-    margin-top: 1px;
 }
 
 /* The copyright message in the bottom bar */
@@ -115,6 +97,7 @@ html {
     font-family: Monofonto;
     font-size: 12pt;
     padding: 2pt;
+    background-color: white;
 }
 
 body {
@@ -160,4 +143,37 @@ a {
 article {
     margin-top: 50pt;
     margin-bottom: 30pt;
+    max-width: 70vw;
+    max-height: 85vh;
+    overflow-y: scroll;
+}
+
+/***** MEDIA QUERY *****/
+@media (max-aspect-ratio: 4/5) /* If aspect ratio is smaller than 4:5 */ {
+    .hide-mobile {
+        display: none;
+    }
+}
+
+@media  (orientation: portrait) /* If aspect ratio is smaller than 1:1 */ {
+    .hide-portrait {
+        display: none;
+    }
+
+    article {
+        columns: 1;
+    }
+}
+
+@media (orientation: landscape) /* If aspect ratio is larger than 1:1 */ {
+    .hide-landscape {
+      display: none;
+    }
+
+    article {
+        margin-top: 50pt;
+        margin-bottom: 30pt;
+        columns: 2;
+        overflow-y: auto;
+    }
 }
