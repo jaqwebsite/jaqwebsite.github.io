@@ -33,15 +33,13 @@
 }
 
 /***** SCROLLBAR CUSTOMISATION *****/
-article::-webkit-scrollbar {
-    width: 1.5vh;
+::-webkit-scrollbar {
+    width: 10px;
     background: #ffffff00;
-    position:absolute;
-    left: 0;
 }
 
-article::-webkit-scrollbar-thumb {
-    background-color: black;
+::-webkit-scrollbar-thumb {
+    background-color: #222;
 }
 
 ::-webkit-scrollbar-track {
@@ -54,6 +52,7 @@ article::-webkit-scrollbar-thumb {
     font-size: 16pt;
     width: 378px;
     vertical-align: bottom;
+    margin-top: -5px;
 }
 
 .barcode {
@@ -71,15 +70,24 @@ article::-webkit-scrollbar-thumb {
     vertical-align: middle;
 }
 
-/* The copyright message in the bottom bar */
-.copyright {
-    text-align: center;
+.spread {
+    height: calc(100vh - 13px); /* Adjust this depending on the height - current height might not support all screen sizes. */
+    top: 300px;
+    display: flex;
+}
+
+.main-text {
+    width: 100%
+}
+
+.links {
+    width: 350px;
 }
 
 /* This should be done with a justify-content as space-between but I don't know how to. Shame! */
 .bottom-bar {
     display: flex;
-    background-color: black;
+    background-color: #222;
     color: white;
     width: 99vw;
     position: fixed;
@@ -92,16 +100,26 @@ article::-webkit-scrollbar-thumb {
     flex-grow: 1;
 }
 
+/* The copyright message in the bottom bar */
+.copyright {
+    text-align: center;
+}
+
 /***** MAIN DEFINITIONS *****/
 html {
     font-family: Monofonto;
     font-size: 12pt;
     padding: 2pt;
     background-color: white;
+    color: #222;
 }
 
 body {
     margin-top: 0;
+}
+
+a:hover {
+    text-decoration: none;
 }
 
 header {
@@ -127,7 +145,7 @@ header.square {
 nav {
     display: flex;
     position: fixed;
-    width: 99%;
+    width: calc(100% - 20px);
     font-family: 'Milker';
     font-size: 42pt;
     align-items: center;
@@ -137,18 +155,32 @@ nav {
 
 a {
     color: inherit;
-    text-decoration: none;
 }
 
 article {
     margin-top: 50pt;
     margin-bottom: 30pt;
-    max-width: 70vw;
-    max-height: 85vh;
-    overflow-y: scroll;
+    margin-right: 10px;
+    overflow-y: auto;
 }
 
-/***** MEDIA QUERY *****/
+details > summary {
+    list-style-type: '▸ ';
+}
+  
+details[open] > summary {
+    list-style-type: '▾ ';
+}
+
+details {
+    cursor: pointer; /* Makes the cursor a pointer finger when hovering over the <details> element */
+}
+
+details > *:not(summary){
+    margin-left: 1em;
+}
+
+/***** SCREEN SIZE RESPONSIVENESS *****/
 @media (max-aspect-ratio: 4/5) /* If aspect ratio is smaller than 4:5 */ {
     .hide-mobile {
         display: none;
@@ -161,7 +193,7 @@ article {
     }
 
     article {
-        columns: 1;
+        margin-bottom: 0
     }
 }
 
@@ -169,11 +201,10 @@ article {
     .hide-landscape {
       display: none;
     }
+}
 
-    article {
-        margin-top: 50pt;
-        margin-bottom: 30pt;
-        columns: 2;
-        overflow-y: auto;
+@media (max-width: 900px) /* If viewport width is larger than 900px */ {
+    .flag {
+        display: none
     }
 }
