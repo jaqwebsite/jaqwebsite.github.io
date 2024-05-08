@@ -52,7 +52,7 @@
     font-size: 16pt;
     width: 378px;
     vertical-align: top;
-    margin-top: -5px;
+    margin-top: -5px; /* This could have issues on some devices due to having negative margins */
 }
 
 .barcode {
@@ -71,7 +71,7 @@
 }
 
 .spread {
-    height: calc(100vh - 13px); /* Adjust this depending on the height - current height might not support all screen sizes. */
+    height: calc(100vh - 10px); /* I forgot why I added this but whenever I remove it the layout breaks */
     top: 300px;
     display: flex;
 }
@@ -84,8 +84,8 @@
     width: 350px;
 }
 
-/* This should be done with a justify-content as space-between but I don't know how to. Shame! */
 .bottom-bar {
+    /* This should be done with justify-content: space-between */
     display: flex;
     background-color: #222;
     color: white;
@@ -112,6 +112,7 @@ html {
     padding: 2pt;
     background-color: white;
     color: #222;
+    overflow: hidden; /* This is bad practice but it should't cause enough issues for me to be bothered fixing my layout for the 3849273492348th time*/
 }
 
 body {
@@ -127,7 +128,7 @@ header {
     position: relative;
     font-family: Milker;
     font-size: 60px;
-    margin-top: -13px;
+    margin-top: -13px; /* This possibly has issues on some devices, but it shouldn't go further than the header being a bit more spaced out from the top than it should be */
 }
 
 header::after {
