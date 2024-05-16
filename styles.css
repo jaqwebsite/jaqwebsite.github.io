@@ -44,7 +44,6 @@ nav {
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
 article {
@@ -54,13 +53,38 @@ article {
 
 a {
   color: inherit;
-  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
 }
 
 a:hover {
-  text-decoration:underline;
+  text-decoration: none;
 }
 
 nav a {
   display: flex;
+  text-decoration: none;
+}
+
+div {
+  display: flex
+}
+
+/* I chose flex-grow divs instead of having padding like the nav because it gives me more freedom to put things to the sides */
+div.side {
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  article {
+    width: 768px;
+  }
+
+  nav {
+    width: 768px;
+    padding-left: calc((100vw - 768px)/2);
+    padding-right: calc((100vw - 768px)/2);
+  }
 }
