@@ -85,29 +85,43 @@ table {
 	border-spacing: 0;
 }
 
+/* I added this one myself -Jaq */
+a {
+    color: inherit;
+}
+
 /***** SCROLLBAR CUSTOMISATION *****/
 ::-webkit-scrollbar {
     width: 10px;
-    background: #ffffff00;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #222;
 }
 
-::-webkit-scrollbar-track {
-    background-color: transparent;
-    z-index: 1;
-}
+/***** CONVENTIONS *****
+Order:
+Things that are unlikely to be edited (CSS Reset, Fonts etc)
+↓
+Things that are less likely to be edited (Conventions, Scrollbar etc)
+↓
+Things that are likely to be edited - Aim to have wider scope things like <html> higher
 
-/***** CLASS DEFINTION *****/
+Selectors that are closely related/likely to be edited at the same time should be located together (Eg <article>, <header> and .link-list are located together)
+
+Aim to put properties that have the most effect on an element higher for readability (!!!! COME UP WITH MORE RULES FOR THE ORDER OF PROPERTIES !!!!)
+
+Units:
+Use px or vh/vw whenever possible
+*/
+
+/***** DEFINTIONS *****/
 .breadcrumb {
-    font-size: 16pt;
-    width: 378px;
-    vertical-align: top;
+    font-size: 22px;
     margin-top: -5px; /* This could have issues on some devices due to having negative margins */
 }
 
+/* At some point I'd like to fix this to be a bit thinner */
 .barcode {
     font-family: 'Barcode', sans-serif;
     font-size: 82%;
@@ -117,6 +131,7 @@ table {
     margin-left: auto;
 }
 
+/* This applies to the flags in the nav */
 nav img {
     height: 46px;
     align-items: flex-start;
@@ -159,18 +174,12 @@ nav img {
     text-align: center;
 }
 
-/***** MAIN DEFINITIONS *****/
 html {
-    font-family: Monofonto;
+    font-family: Monofonto, Arial, sans-serif;
     font-size: 12pt;
-    padding: 2pt;
     background-color: white;
     color: #222;
     overflow: hidden; /* This is bad practice but it should't cause enough issues for me to be bothered fixing my layout for the 3849273492348th time*/
-}
-
-body {
-    margin-top: 0;
 }
 
 a:hover {
@@ -182,14 +191,14 @@ header {
     position: relative;
     font-family: Milker;
     font-size: 60px;
-    z-index: -2;
+    z-index: -2; 
     top: -7px;
 }
 
 header::after {
     position: absolute;
     display: flex;
-    content: ""; /* The ::after doesn't display without any content */
+    content: ""; /* This is needed because the ::after doesn't display without any content */
     height: 50px;
     background-color: orange;
     width: 100%;
@@ -203,13 +212,9 @@ nav {
     width: calc(100% - 15px);
     font-family: 'Milker';
     font-size: 42pt;
-    align-items: center;
+    align-items: center; /* I'm not sure if this works properly on all devices */
     background-color: white;
     padding-left: 5px;
-}
-
-a {
-    color: inherit;
 }
 
 article {

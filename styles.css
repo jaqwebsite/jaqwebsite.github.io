@@ -1,66 +1,66 @@
-html{
-  font-family: 'Century Gothic'; 
-  line-height: 1.3em;
-  color: #333;
-  letter-spacing: 0.02em;
-  font-size: 1.3em;
+@font-face {
+  font-family: 'Air Conditioner';
+  src: url('fonts/AirConditioner/air-conditioner-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Barcode';
+  src: url('fonts/Barcode39/ConnectCode39.otf') format('opentype'),
+      url('fonts/Barcode39/ConnectCode39.woff') format('woff'),
+      url('fonts/Barcode39/ConnectCode39.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Milker';
+  src: url('fonts/Milker/milker-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Monofonto';
+  src: url('fonts/Monofonto/monofonto-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Retro';
+  src: url('fonts/Retro/retro-regular.ttf');
+}
+
+@font-face {
+  font-family: 'Sandre';
+  src: url('fonts/Sandre/sandre-regular.ttf');
+}
+
+@import url('reset.css');
+
+html {
+  font-family: Monofonto, monospace;
+}
+
+nav {
+  background-color: lightgrey;
+  padding: 10px;
+  width: calc(100% - 20px);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+article {
+  padding: 7px;
+  line-height: 1.2;
 }
 
 a {
-  color: #333;
-  text-decoration-thickness: 1px;
+  color: inherit;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none
+  text-decoration:underline;
 }
 
-summary {
-  margin-top: 0.2em
-}
-
-p {
-  margin-top: 8px;
-  margin-bottom: 8px;
-}
-
-ul {
-  list-style-type: "- ";
-  padding-left: 27px;
-  margin-top: 8px;
-}
-
-details {
-  cursor: pointer;
-  margin-left: 24px;
-}
-
-details a {
-  margin-left: 24px
-}
-
-body {
-  margin-left: 10px
-}
-
-nav,
-footer {
-  background-color: #e88e00ff; 
-  padding: 10px;
-  margin: -10px;
-  margin-bottom: 1px;
-  color:#fff
-}
-
-nav a,
-footer a {
-  color: #fff
-}
-
-details > summary {
-  list-style-type: '▸ ';
-}
-
-details[open] > summary {
-  list-style-type: '▾ ';
+nav a {
+  display: flex;
 }
