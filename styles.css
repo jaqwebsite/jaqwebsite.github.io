@@ -37,6 +37,10 @@ html {
   font-family: Monofonto, monospace;
 }
 
+body {
+  background-size: cover;
+}
+
 nav {
   background-color: lightgrey;
   padding: 10px;
@@ -49,6 +53,9 @@ nav {
 article {
   padding: 7px;
   line-height: 1.2;
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
 a {
@@ -78,15 +85,15 @@ div.side {
   display: none;
 }
 
-@media (min-width: 778px) {
+@media (min-width: 798px) {
   article {
     width: 768px;
   }
 
   nav {
     width: 768px;
-    padding-left: calc((100vw - 768px)/2);
-    padding-right: calc((100vw - 768px)/2);
+    padding-left: calc((100% - 768px)/2);
+    padding-right: calc((100% - 768px)/2);
   }
 
   div.side {
