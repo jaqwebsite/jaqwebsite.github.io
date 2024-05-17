@@ -75,9 +75,10 @@ div {
 /* I chose flex-grow divs instead of having padding like the nav because it gives me more freedom to put things to the sides */
 div.side {
   flex-grow: 1;
+  display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 778px) {
   article {
     width: 768px;
   }
@@ -86,5 +87,9 @@ div.side {
     width: 768px;
     padding-left: calc((100vw - 768px)/2);
     padding-right: calc((100vw - 768px)/2);
+  }
+
+  div.side {
+    display: flex;
   }
 }
