@@ -1,0 +1,84 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: 'Milker';
+  src: url('fonts/Milker/milker-regular.ttf');
+}
+
+@font-face {
+  font-family: 'LemonMilk';
+  src: url('fonts/LemonMilk/LEMONMILK-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/outfit-variable.otf')
+}
+
+/* 
+  ORDER OF CSS PROPERTIES
+  selector {
+    width/height
+    position/display
+    top/bottom/left/right
+    margin/padding
+    colors
+    font
+    other...
+  }
+*/
+
+body {
+  font-family: 'Outfit', 'Trebuchet MS', Arial, sans-serif;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+article {
+  width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+
+nav {
+  width: 800px;
+  top: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  padding: 10px calc(50% - 400px); /* Format: top and bottom, left and right */
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  justify-content: space-between;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 880px) {
+  article, nav {
+    width: calc(100% - 60px);
+  }
+
+  nav {
+    padding: 10px 30px
+  }
+}
+
+@media (min-width: 550px) {
+  .mobile {
+    display: none
+  }
+}
+
+@media (max-width: 550px) {
+  .desktop {
+    display: none
+  }
+}

@@ -31,31 +31,56 @@
   src: url('fonts/Sandre/sandre-regular.ttf');
 }
 
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/Outfit/outfit-variable.ttf')
+}
+
 @import url('reset.css');
 
 html {
-  font-family: Monofonto, monospace;
+  font-family: Outfit, sans-serif;
+  letter-spacing: 1px;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/52/Lake_Clearwater%2C_Canterbury%2C_New_Zealand_02.jpg);
+  background-position: 50% 0;
+  background-size: 2720px;
+  flex-grow: 1;
+}
+
+html::before {
+  content: "";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -1;
 }
 
 body {
-  background-size: cover;
+  display: flex;
 }
 
 nav {
-  background-color: coral;
   padding: 10px;
-  width: calc(100% - 20px);
+  padding-top: 40px;
   position: fixed;
-  display: flex;
-  justify-content: space-between;
+  letter-spacing: 2px;
+  line-height: 30px;
 }
 
 article {
   padding: 7px;
   line-height: 1.2;
-  background-color: white;
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 20px;
+  font-weight: 350;
+}
+
+h1 {
+  font-weight: bold;
+  letter-spacing: 10px;
+  font-size: 20px;
+  padding-bottom: 2px;
 }
 
 a {
@@ -75,14 +100,47 @@ nav a {
   text-decoration: none;
 }
 
-div {
-  display: flex
+a.linkbiggest {
+  padding-top: 5px;
+  padding: 10px;
+  position: fixed;
+  line-height: 30px;
+  text-decoration: none;
+  z-index: 2;
 }
 
-/* I chose flex-grow divs instead of having padding like the nav because it gives me more freedom to put things to the sides */
+a.linkbiggest:hover {
+  text-decoration: underline;
+}
+
+div.title {
+  font-weight: bold;
+  font-size: 20px;
+  top: 20px;
+  right: 10px;
+  position: absolute;
+  writing-mode: vertical-lr;
+  letter-spacing: 35px;
+}
+
+article::after {
+  content: "©JAQWEBSITE 2024";
+  top: 15px;
+  right: 50px;
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+/* I chose flex-grow divs instead of having padding because it gives me more freedom to put things to the sides */
 div.side {
   flex-grow: 1;
   display: none;
+}
+
+div.middle {
+  display: flex;
+  flex-grow: 1;
 }
 
 @media (min-width: 798px) {
@@ -90,13 +148,19 @@ div.side {
     width: 768px;
   }
 
-  nav {
-    width: 768px;
-    padding-left: calc((100% - 768px)/2);
-    padding-right: calc((100% - 768px)/2);
-  }
-
   div.side {
     display: flex;
+  }
+}
+
+@media (max-width: 950px) {
+  div.title, article::after {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  nav {
+    display: none;
   }
 }
