@@ -1,18 +1,9 @@
 @import url("reset.css");
 
 @font-face {
-  font-family: 'Milker';
-  src: url('fonts/Milker/milker-regular.ttf');
-}
-
-@font-face {
-  font-family: 'LemonMilk';
-  src: url('fonts/LemonMilk/LEMONMILK-Regular.otf');
-}
-
-@font-face {
   font-family: 'Outfit';
-  src: url('/fonts/Outfit/outfit-variable.otf')
+  src: url('/fonts/Outfit/outfit-variable.otf') format('opentype');
+  src: url('/fonts/Outfit/outfit-variable.ttf') format('truetype');
 }
 
 /* 
@@ -28,10 +19,26 @@
   }
 */
 
+html {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/52/Lake_Clearwater%2C_Canterbury%2C_New_Zealand_02.jpg);
+  background-position: 50% 0;
+  background-size: 2720px;
+}
+
+article::before {
+  content: "";
+  position: fixed;
+  height: 100%;
+  width: 800px;
+  padding: 30px;
+  top: 0;
+  left: calc(50% - 430px);
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: -1;
+}
+
 body {
-  font-family: 'Outfit', 'Trebuchet MS', Arial, sans-serif;
-  font-weight: 700;
-  line-height: 20px;
+  font: 250 16px/20px 'Outfit', Arial, sans-serif; /* Format: weight size/line-height family*/
 }
 
 article {
@@ -40,7 +47,7 @@ article {
   padding: 30px;
 }
 
-nav {
+header {
   width: 800px;
   top: 0;
   position: -webkit-sticky;
@@ -49,8 +56,11 @@ nav {
   padding: 10px calc(50% - 400px); /* Format: top and bottom, left and right */
   background-color: black;
   color: white;
-  font-weight: bolder;
   justify-content: space-between;
+}
+
+p {
+  margin-bottom: 15px;
 }
 
 a {
@@ -61,12 +71,21 @@ a:hover {
   text-decoration: none;
 }
 
+li {
+  list-style-type: "- ";
+  margin-left: 15px;
+}
+
+.flag {
+  height: 30px;
+}
+
 @media (max-width: 880px) {
-  article, nav {
+  article, header {
     width: calc(100% - 60px);
   }
 
-  nav {
+  header {
     padding: 10px 30px
   }
 }
@@ -80,5 +99,9 @@ a:hover {
 @media (max-width: 550px) {
   .desktop {
     display: none
+  }
+
+  img.i1 {
+    width: 80%
   }
 }
