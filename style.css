@@ -1,10 +1,6 @@
 @import url("reset.css");
 
-@font-face {
-  font-family: 'Outfit';
-  src: url('/fonts/Outfit/outfit-variable.otf') format('opentype');
-  src: url('/fonts/Outfit/outfit-variable.ttf') format('truetype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rozha+One&display=swap');
 
 /* 
   ORDER OF CSS PROPERTIES
@@ -20,47 +16,31 @@
 */
 
 html {
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/52/Lake_Clearwater%2C_Canterbury%2C_New_Zealand_02.jpg);
-  background-position: 50% 0;
-  background-size: 2720px;
+  font-family: Arial;
+  font-weight: bold;
 }
 
-article::before {
-  content: "";
-  position: fixed;
-  height: 100%;
-  width: 800px;
-  padding: 30px;
-  top: 0;
-  left: calc(50% - 430px);
-  background-color: rgba(255, 255, 255, 0.9);
-  z-index: -1;
+img, h1, h2, p {
+  padding-top: 20px;
+  text-align: center;
 }
 
-body {
-  font: 250 16px/20px 'Outfit', Arial, sans-serif; /* Format: weight size/line-height family*/
+li {
+  text-align: center;
 }
 
-article {
-  width: 800px;
-  margin: auto;
-  padding: 30px;
+img {
+  display: block;
+  margin: 0 auto;
 }
 
-header {
-  width: 800px;
-  top: 0;
-  position: -webkit-sticky;
-  position: sticky;
-  display: flex;
-  padding: 10px calc(50% - 400px); /* Format: top and bottom, left and right */
-  background-color: black;
-  color: white;
-  justify-content: space-between;
+h1 {
+  font-family: 'Arial Black';
+  font-size: 40px;
 }
 
 p {
-  margin-bottom: 15px;
+  line-height: 20px;
 }
 
 a {
@@ -69,39 +49,4 @@ a {
 
 a:hover {
   text-decoration: none;
-}
-
-li {
-  list-style-type: "- ";
-  margin-left: 15px;
-}
-
-.flag {
-  height: 30px;
-}
-
-@media (max-width: 880px) {
-  article, header {
-    width: calc(100% - 60px);
-  }
-
-  header {
-    padding: 10px 30px
-  }
-}
-
-@media (min-width: 550px) {
-  .mobile {
-    display: none
-  }
-}
-
-@media (max-width: 550px) {
-  .desktop {
-    display: none
-  }
-
-  img.i1 {
-    width: 80%
-  }
 }
