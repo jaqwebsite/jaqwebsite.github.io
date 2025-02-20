@@ -28,10 +28,10 @@ img, h1, h2, p {
 li {
   text-align: center;
   list-style-position: inside;
-  list-style-type:disc;
+  list-style-type: "☞ ";
 }
 
-img {
+img, iframe {
   display: block;
   margin: 0 auto;
 }
@@ -51,4 +51,8 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+pink {
+  color: #ff7f77;
 }
