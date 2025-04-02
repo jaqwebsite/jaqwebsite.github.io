@@ -61,6 +61,14 @@ p {
   line-height: 20px;
 }
 
+strong {
+  font-weight: bolder;
+}
+
+em {
+  font-style: italic;
+}
+
 a {
   color: blue;
 }
