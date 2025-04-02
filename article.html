@@ -8,7 +8,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<h1>JAQWEBSITE.GITHUB.IO</h1>
 <p id="date">loading...</p>
 <article id="content">loading...</article>
 
@@ -44,7 +43,7 @@
         })
         .catch(error => console.error("Failed to load markdown:", error));
 
-      fetch("articles.json")
+      fetch("articles/articles.json")
         .then(response => response.json()) // Converts the contents of the fetched file and converts javascript object
         .then(data => {
           let article = data.article.find(a => a.id === articleID); // Find the article with the matching ID
