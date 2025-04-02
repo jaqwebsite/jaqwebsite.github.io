@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>PLACEHOLDER</title>
+  <title id="title">PLACEHOLDER</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -49,8 +49,10 @@
           let article = data.article.find(a => a.id === articleID); // Find the article with the matching ID
           if (article) {
             document.getElementById("date").innerHTML = article.date;
+            document.getElementById("title").innerHTML = article.title;
           } else {
             document.getElementById("date").innerHTML = "no publication date found";
+            document.getElementById("title").innerHTML = "article";
           }
         })
         .catch(error => console.error("Failed to load JSON:", error));
