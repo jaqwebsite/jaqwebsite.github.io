@@ -1,6 +1,6 @@
 # REVIEW: I AM MUSIC - PLAYBOI CARTI
 finally got around to writing some content lmao. fitting that its a carti review with how much i delayed this
-DISCLAIMER: EVERYTHING DISCUSSED IN THIS REVIEW IS OBJECTIVELY 100%  TRUE FACTS
+*DISCLAIMER: EVERYTHING DISCUSSED IN THIS REVIEW IS OBJECTIVELY 100%  TRUE FACTS*
 ## TRACK REVIEWS
 **POP OUT - 7.5/10**
 metal af and has crazy energy this goes crazy in the right situation
