@@ -1,5 +1,12 @@
 @import url("reset.css");
 
+@font-face {
+  font-family: 'Arial Black';
+  src: url(fonts/arial_black.ttf) format(ttf),
+    url(fonts/arial_black-webfont.woff) format(woff),
+    url(fonts/arial_black-webfont.woff2) format(woff2);
+}
+
 /* 
   ORDER OF CSS PROPERTIES
   selector {
@@ -51,7 +58,7 @@ img, iframe {
 }
 
 h1, h2 {
-  font-weight: 900;
+  font-family: Arial Black;
 }
 
 h1 {
@@ -67,7 +74,7 @@ strong {
 }
 
 em {
-  font-style: italic;
+  font-family: Arial Black;
 }
 
 a {
