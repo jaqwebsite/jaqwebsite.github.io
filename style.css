@@ -52,8 +52,11 @@ img, iframe {
   margin: 0 auto;
 }
 
-h1 {
+h1, h2 {
   font-family: 'Arial Black';
+}
+
+h1 {
   font-size: 40px;
 }
 

@@ -79,7 +79,7 @@ this song does atmospheric and vibeyness perfectly
 the beat is great kanye will always be the goat
 cartis vocals are pretty cool aswell
 **BACKR00MS (ft travis) - 7/10**
-<img src="images/my_grandma_still_play_bingo.jpg" style="width: 250px;"></img>
+<img src="images/my_grandma_still_play_bingo.jpg" style="width: 250px; text-align: left;"></img>
 **FOMDJ - 8/10**
 beat is fire and cartis vocals are hype af
 ## OVERALL REVIEW - 7.5/10
