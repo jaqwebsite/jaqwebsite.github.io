@@ -70,11 +70,11 @@ p {
 }
 
 strong {
-  font-weight: 900;
+  font-family: Arial Black;
 }
 
 em {
-  font-family: Arial Black;
+  font-style: italic;
 }
 
 a {
