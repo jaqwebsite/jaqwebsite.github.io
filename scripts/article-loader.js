@@ -30,7 +30,7 @@ window.onload = () => {
       .catch(error => console.error("Failed to load markdown:", error));
 
     fetch("articles/articles.json")
-      .then(response => response.json()) // Converts the contents of the fetched file and converts javascript object
+      .then(response => response.json()) // Converts the contents of the fetched file and converts it to a javascript object
       .then(data => {
         let article = data.article.find(a => a.id === articleID); // Find the article with the matching ID
         if (article) {

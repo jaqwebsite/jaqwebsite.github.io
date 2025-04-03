@@ -20,13 +20,13 @@ html {
   font-weight: bold;
 }
 
-img, h1, h2, p {
+img, h1, h2, p, details {
   padding-top: 20px;
   text-align: center;
 }
 
 .big {
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     width: 90vw;
     margin-left: 5vw;
   }
@@ -75,6 +75,10 @@ a {
 
 a:hover {
   text-decoration: none;
+}
+
+summary:hover {
+  cursor: pointer;
 }
 
 pink {
