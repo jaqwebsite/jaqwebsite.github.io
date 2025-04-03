@@ -84,7 +84,9 @@ cartis vocals are pretty cool aswell
 **FOMDJ - 8/10**
 beat is fire and cartis vocals are hype af
 ## OVERALL REVIEW - 7.5/10
-i love the variety on this album but i wish it was arranged in a better way so that it felt more like an album instead of a mixtape from a bunch of random eras. ngl the randomness of the production and spammed dj tags and sound effects fit pretty well into the mixtape era vibe i think carti was going for which i dont think most people understood.
-my biggest criticism of the album is how badly the songs are ordered on the album. idk how to describe it but it makes the album way nicer to listen to in order when at least some thought is put into the order, like wtf is the transition from cocaine nose to we need all da vibes.
+ngl the randomness of the production and spammed dj tags and sound effects fit pretty well into the mixtape era vibe i think carti was going for which i dont think most people understood. i liked cartis vocals a lot more on this compared to wlr.
+
+my biggest criticism is how badly the songs are ordered on the album. idk how to describe it but it makes the album way nicer to listen to in order when at least some thought is put into the order, like wtf is the transition from cocaine nose to we need all da vibes.
 i feel like it didnt need as many tracks and wouldve been better if it had less tracks, but made them longer and put more effort into the production.
-overall i think he did pretty well for the concept of the album, its hard to get something that everyones goanna like with how experimental and how much variety is on the album. its hard to compare it with the rest of cartis albums since theyre so different but i definitely liked it a lot more than whole lotta red. die lit is better though i think
+
+overall i think he did pretty well for the concept of the album. its got a decent amount of hate but its hard to get something that everyones goanna like with how experimental and how much variety was in it.
