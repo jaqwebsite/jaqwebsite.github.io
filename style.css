@@ -1,7 +1,5 @@
 @import url("reset.css");
 
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Rozha+One&display=swap');
-
 /* 
   ORDER OF CSS PROPERTIES
   selector {
@@ -53,7 +51,7 @@ img, iframe {
 }
 
 h1, h2 {
-  font-family: 'Arial Black';
+  font-weight: 900;
 }
 
 h1 {
@@ -65,7 +63,7 @@ p {
 }
 
 strong {
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 em {
