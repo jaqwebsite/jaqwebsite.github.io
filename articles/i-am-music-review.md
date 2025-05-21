@@ -3,7 +3,7 @@ finally got around to writing some content lmao. fitting that its a carti review
 *DISCLAIMER: EVERYTHING DISCUSSED IN THIS REVIEW IS OBJECTIVELY 100%  TRUE FACTS*
 ## TRACK REVIEWS
 **POP OUT - 7.5/10**
-metal af and has crazy energy this goes crazy in the right situation
+metal af and has crazy energy
 it does kinda hurt my ears though
 **CRUSH - 8.5/10**
 instantly loved this song when carti first previewed it at rl miami. the beat goes so hard f1lthy and travis actually snapped. only thing that i think missed on this song is if travis had a proper feature instead of the lyrics being like 3/4 seeyuh. still hard though one of my favourites
@@ -13,7 +13,7 @@ the vibe of this song is so hard. i kinda wish it was longer but itd prolly get 
 the lyrics of this song are so hard but the intro is way too long imo itd hit just as hard if it was like a quarter of the time. the gunshot is hard idc
 **MOJO JOJO (ft kendrick) - 4/10**
 kendrick is one of my goats but he sold this feature so much man
-he had the opportunity to go crazy on a trap beat like he did on tHat part (ADD A LINK HERE), but instead hes relegated to this zesty ahh intro and stupid ad libs :broken_heart:
+he had the opportunity to go crazy on a trap beat like he did on [tHat part](https://youtu.be/HihM1vKWRcA?t=110), but instead hes relegated to this zesty ahh intro and stupid ad libs :broken_heart:
 **PHILLY (ft travis) - 6.5/10**
 beat and travis feature are decent but nun special
 **RADAR - 9.5/10**
@@ -41,7 +41,7 @@ kendricks verse is kinda trash on this one too ngl. i feel like his lyrics were 
 one of the few examples of that snare roll that they kept spamming actually went kinda good (i think they updated the mixing now so the rolls arent that bad). great song
 **WAKE UP F1LTHY (ft travis) - 9/10**
 deep voice carti :fire:
-travis's verse and the beat was so good aswell
+travis's verse and the beat was so good too
 **JUMPIN (ft lil uzi) - 7/10**
 carti is kinda copying futures voice again on this one but its kinda good this time
 so happy to see carti and lil uzi collabing again its fire wish this song was longer
@@ -77,7 +77,7 @@ only downside is that the production feels a little sloppily executed imo but it
 this song does atmospheric and vibeyness perfectly
 **2024 - 8/10**
 the beat is great kanye will always be the goat
-cartis vocals are pretty cool aswell
+cartis vocals are pretty cool too
 **BACKR00MS (ft travis) - 7/10**
 <img src="images/my_grandma_still_play_bingo.jpg" style="width: 250px; float: left;"></img>
 <div style="clear: both"></div>
