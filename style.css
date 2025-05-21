@@ -24,9 +24,10 @@ html {
   font-family: Arial;
   font-weight: bold;
   background-image: url(https://www.cameronsworld.net/img/content/14/bg.png);
+  padding-bottom: 20px;
 }
 
-img, h1, h2, p, details {
+img, iframe, h1, h2, p, details {
   padding-top: 20px;
   text-align: center;
 }

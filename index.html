@@ -10,7 +10,7 @@
 
 <h1>JAQWEBSITE.GITHUB.IO</h1>
 
-<img src="images/ads/rally_1_b.jpg" class="big"></img>
+<img src="https://web.archive.org/web/20070120033859/http://www.geocities.com/BourbonStreet/2356/earth3d.gif">
 
 <p style="color: coral">WELCOME TO MY WEBSITE !!</p>
 <p style="color: red; font-style: italic;">
@@ -23,3 +23,13 @@
 </p>
 
 <iframe width="560" height="315" class="big" src="https://www.youtube.com/embed/68JQmKitwZc?si=znBfXnPJV9LZMcJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<img id="random-ad" src="" class="big" style="height: 400px; object-fit:scale-down;"></img>
+<script>
+  const images = ["lada_1.jpg", "rx7_4.jpg", "rx7_4_b.jpg", "rx7_5.jpg"]; // the images that can be picked to display
+  const folderpath = "images/ads/";
+
+  const selectedimage = folderpath + images[Math.floor(Math.random() * images.length)];
+
+  document.getElementById("random-ad").src = selectedimage;
+</script>
