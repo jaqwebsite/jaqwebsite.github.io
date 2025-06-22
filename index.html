@@ -13,6 +13,7 @@
 <img src="https://web.archive.org/web/20070120033859/http://www.geocities.com/BourbonStreet/2356/earth3d.gif">
 
 <p style="color: coral">WELCOME TO MY WEBSITE !!</p>
+
 <p style="color: red; font-style: italic;">
   i sometimes write stuff on here but its way more fun to redo all of the html and css every few months instead of making content
 </p>
@@ -24,12 +25,16 @@
 
 <iframe width="560" height="315" class="big" src="https://www.youtube.com/embed/68JQmKitwZc?si=znBfXnPJV9LZMcJ0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-<img id="random-ad" src="" class="big" style="height: 400px; object-fit:scale-down;"></img>
-<script>
-  const images = ["lada_1.jpg", "rx7_4.jpg", "rx7_4_b.jpg", "rx7_5.jpg"]; // the images that can be picked to display
-  const folderpath = "images/ads/";
+<img src="https://web.archive.org/web/20070120033859/http://www.geocities.com/BourbonStreet/2356/earth3d.gif">
 
+<div id="random-ad" style="height: 400px; margin-top: 20px; background-repeat: repeat-x; background-size: contain;"></div>
+
+<script>
+  const images = ["coke_1.webp", "celica_1.webp", "mx5_2.jpg", "rx7_1.jpg", "rx7_2.jpg", "rx7_3.jpg", "rx7_4_b.jpg", "rx7_5.jpg"];
+  const folderpath = "images/ads/";
   const selectedimage = folderpath + images[Math.floor(Math.random() * images.length)];
 
-  document.getElementById("random-ad").src = selectedimage;
+  document.getElementById("random-ad").style.backgroundImage = `url('${selectedimage}')`;
 </script>
+
+<img src="https://www.cameronsworld.net/img/content/22/4.gif">
