@@ -89,4 +89,4 @@ ngl the randomness of the production and spammed dj tags and sound effects fit p
 my biggest criticism is how badly the songs are ordered on the album. idk how to describe it but it makes the album way nicer to listen to in order when at least some thought is put into the order, like wtf is the transition from cocaine nose to we need all da vibes.
 i feel like it didnt need as many tracks and wouldve been better if it had less tracks, but made them longer and put more effort into the production.
 
-overall i think he did pretty well for the concept of the album. its got a decent amount of hate but its hard to get something that everyones goanna like with how experimental and how much variety was in it.
+overall i think he did pretty well for the concept of the album. its got a decent amount of hate but its hard to get something that everyones goanna like with how experimental and how much variety was in it. (not saying its that experimental of an album but idk how to describe it)
